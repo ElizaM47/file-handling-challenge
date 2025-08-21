@@ -1,0 +1,15 @@
+my-list = {}
+my_list.append(10)
+my_list.append(20)
+my_list.append(30)
+my_list.append(40)
+my-list .insert(1 ,15)
+my-list.extend({50, 60, 70})
+my-list.pop()
+my-list.sort()
+index_of_30 = my_list.index(30)
+print("Index of 30:", index_of_30)
+print("Final list:", my_list)
+
+    
+                

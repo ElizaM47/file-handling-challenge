@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="A sample page with lists, tables, media, and an HTML5 form."/>
+  <title>Enhanced HTML5 Form Page</title>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to My Multi-Section HTML5 Page</h1>
+    <p>This page demonstrates lists, tables, media, and a well-structured form using native HTML5 features.</p>
+  </header>
+
+  <!-- Section 1: Lists -->
+  <section>
+    <h2>Top Programming Languages</h2>
+    <ul>
+      <li>Python</li>
+      <li>JavaScript</li>
+      <li>Java</li>
+      <li>HTML & CSS</li>
+    </ul>
+
+    <h3>Steps to Learn HTML:</h3>
+    <ol>
+      <li>Start with basic structure</li>
+      <li>Learn common tags</li>
+      <li>Build small projects</li>
+      <li>Practice forms and validation</li>
+    </ol>
+  </section>
+
+  <!-- Section 2: Table -->
+  <section>
+    <h2>Course Schedule</h2>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Day</th>
+          <th>Course</th>
+          <th>Time</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Monday</td>
+          <td>HTML Basics</td>
+          <td>9:00 AM</td>
+        </tr>
+        <tr>
+          <td>Wednesday</td>
+          <td>CSS Styling</td>
+          <td>11:00 AM</td>
+        </tr>
+        <tr>
+          <td>Friday</td>
+          <td>Form Handling</td>
+          <td>2:00 PM</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Section 3: Media -->
+  <section>
+    <h2>Sample Media Content</h2>
+
+    <h3>Image Example:</h3>
+    <img src="https://via.placeholder.com/300x150" alt="Sample Placeholder Image" width="300" height="150"/>
+
+    <h3>Audio Example:</h3>
+    <audio controls>
+      <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <h3>Video Example:</h3>
+    <video width="320" height="240" controls>
+      <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  <!-- Section 4: HTML5 Form -->
+  <section>
+    <h2>Registration Form</h2>
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Personal Information</legend>
+
+        <label for="fullname">Full Name:</label><br/>
+        <input type="text" id="fullname" name="fullname" placeholder="John Doe" required minlength="3" autocomplete="name"><br/><br/>
+
+        <label for="email">Email:</label><br/>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required autocomplete="email"><br/><br/>
+
+        <label for="phone">Phone Number:</label><br/>
+        <input type="tel" id="phone" name="phone" placeholder="0712345678" pattern="[0-9]{10}" required><br/><br/>
+
+        <label for="dob">Date of Birth:</label><br/>
+        <input type="date" id="dob" name="dob" required><br/><br/>
+      </fieldset>
+
+      <fieldset>
+        <legend>Account Details</legend>
+
+        <label for="username">Username:</label><br/>
+        <input type="text" id="username" name="username" required minlength="5"><br/><br/>
+
+        <label for="password">Password:</label><br/>
+        <input type="password" id="password" name="password" required minlength="6"><br/><br/>
+
+        <label for="confirm">Confirm Password:</label><br/>
+        <input type="password" id="confirm" name="confirm" required minlength="6"><br/><br/>
+
+        <label for="country">Country:</label><br/>
+        <select id="country" name="country" required>
+          <option value="">Select</option>
+          <option value="kenya">Kenya</option>
+          <option value="uganda">Uganda</option>
+          <option value="tanzania">Tanzania</option>
+        </select><br/><br/>
+
+        <label for="bio">Short Bio:</label><br/>
+        <textarea id="bio" name="bio" placeholder="Tell us about yourself..." rows="4" cols="40"></textarea><br/><br/>
+
+        <label>
+          <input type="checkbox" name="terms" required> I agree to the terms and conditions
+        </label><br/><br/>
+      </fieldset>
+
+      <input type="submit" value="Register">
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 My Enhanced HTML5 Page</p>
+  </footer>
+
+</body>
+</html>
