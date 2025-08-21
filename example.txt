@@ -1,2 +1,2 @@
-Hello World
-Python is fun
+Hello, this is my file handling challenge.
+Python makes file handling easy!
