@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enhanced HTML5 Form</title>
+</head>
+<body>
+  <header>
+    <h1>Enhanced HTML5 Content & Forms</h1>
+    <p>This page demonstrates lists, tables, media, and an HTML5 form.</p>
+  </header>
+
+  <!-- Lists -->
+  <section>
+    <h2>Programming Languages</h2>
+    <ul>
+      <li>Python</li>
+      <li>JavaScript</li>
+      <li>SQL</li>
+    </ul>
+
+    <h2>Steps to Build a Website</h2>
+    <ol>
+      <li>Write HTML</li>
+      <li>Add CSS</li>
+      <li>Enhance with JavaScript</li>
+    </ol>
+  </section>
+
+  <!-- Table -->
+  <section>
+    <h2>Student Grades</h2>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Course</th>
+          <th>Grade</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Elizabeth</td>
+          <td>Database Design</td>
+          <td>A</td>
+        </tr>
+        <tr>
+          <td>John</td>
+          <td>Web Development</td>
+          <td>B+</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Media -->
+  <section>
+    <h2>Media Section</h2>
+    <figure>
+      <img src="image.jpg" alt="Sample Image" width="300">
+      <figcaption>Sample image</figcaption>
+    </figure>
+
+    <audio controls>
+      <source src="sample.mp3" type="audio/mpeg">
+      Your browser does not support audio.
+    </audio>
+
+    <video width="400" controls>
+      <source src="sample.mp4" type="video/mp4">
+      Your browser does not support video.
+    </video>
+  </section>
+
+  <!-- HTML5 Form -->
+  <section>
+    <h2>Registration Form</h2>
+    <form action="#" method="post">
+
+      <fieldset>
+        <legend>Personal Info</legend>
+
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname" placeholder="Enter first name" required><br><br>
+
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lname" placeholder="Enter last name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="example@mail.com" required><br><br>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="10-digit number"><br><br>
+      </fieldset>
+
+      <fieldset>
+        <legend>Account Details</legend>
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" minlength="5" required><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" minlength="6" required><br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+          <option value="">--Select--</option>
+          <option value="kenya">Kenya</option>
+          <option value="uganda">Uganda</option>
+          <option value="tanzania">Tanzania</option>
+        </select><br><br>
+      </fieldset>
+
+      <fieldset>
+        <legend>Preferences</legend>
+        <label><input type="radio" name="newsletter" value="yes" checked> Subscribe</label>
+        <label><input type="radio" name="newsletter" value="no"> No thanks</label><br><br>
+
+        <label><input type="checkbox" name="terms" required> I agree to the terms</label>
+      </fieldset>
+
+      <br>
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+    </form>
+  </section>
+
+</body>
+</html>
