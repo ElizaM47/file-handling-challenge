@@ -1,143 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="A sample page with lists, tables, media, and an HTML5 form."/>
-  <title>Enhanced HTML5 Form Page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enhanced Form Assignment</title>
 </head>
 <body>
-
   <header>
-    <h1>Welcome to My Multi-Section HTML5 Page</h1>
-    <p>This page demonstrates lists, tables, media, and a well-structured form using native HTML5 features.</p>
+    <h1>Enhanced Form Assignment</h1>
+    <p>This page demonstrates lists, tables, media, and a complete HTML5 form.</p>
   </header>
 
-  <!-- Section 1: Lists -->
-  <section>
-    <h2>Top Programming Languages</h2>
-    <ul>
-      <li>Python</li>
-      <li>JavaScript</li>
-      <li>Java</li>
-      <li>HTML & CSS</li>
-    </ul>
+  <main>
+    <!-- Lists -->
+    <section>
+      <h2>Our Services</h2>
+      <ul>
+        <li>Web Development</li>
+        <li>Graphic Design</li>
+        <li>Digital Marketing</li>
+      </ul>
+    </section>
 
-    <h3>Steps to Learn HTML:</h3>
-    <ol>
-      <li>Start with basic structure</li>
-      <li>Learn common tags</li>
-      <li>Build small projects</li>
-      <li>Practice forms and validation</li>
-    </ol>
-  </section>
-
-  <!-- Section 2: Table -->
-  <section>
-    <h2>Course Schedule</h2>
-    <table border="1">
-      <thead>
+    <!-- Table -->
+    <section>
+      <h2>Pricing Table</h2>
+      <table border="1" cellpadding="5">
         <tr>
-          <th>Day</th>
-          <th>Course</th>
-          <th>Time</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Monday</td>
-          <td>HTML Basics</td>
-          <td>9:00 AM</td>
+          <th>Service</th>
+          <th>Price</th>
         </tr>
         <tr>
-          <td>Wednesday</td>
-          <td>CSS Styling</td>
-          <td>11:00 AM</td>
+          <td>Web Development</td>
+          <td>$500</td>
         </tr>
         <tr>
-          <td>Friday</td>
-          <td>Form Handling</td>
-          <td>2:00 PM</td>
+          <td>Graphic Design</td>
+          <td>$300</td>
         </tr>
-      </tbody>
-    </table>
-  </section>
+        <tr>
+          <td>Digital Marketing</td>
+          <td>$400</td>
+        </tr>
+      </table>
+    </section>
 
-  <!-- Section 3: Media -->
-  <section>
-    <h2>Sample Media Content</h2>
+    <!-- Media -->
+    <section>
+      <h2>Our Work</h2>
+      <img src="example.jpg" alt="Sample Project Image" width="300"><br><br>
+      <audio controls>
+        <source src="sample.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio><br><br>
+      <video width="320" height="240" controls>
+        <source src="sample.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </section>
 
-    <h3>Image Example:</h3>
-    <img src="https://via.placeholder.com/300x150" alt="Sample Placeholder Image" width="300" height="150"/>
+    <!-- Form -->
+    <section>
+      <h2>Registration Form</h2>
+      <form>
+        <!-- Text field -->
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required><br><br>
 
-    <h3>Audio Example:</h3>
-    <audio controls>
-      <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
-      Your browser does not support the audio element.
-    </audio>
+        <!-- Email -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required autocomplete="on"><br><br>
 
-    <h3>Video Example:</h3>
-    <video width="320" height="240" controls>
-      <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-  </section>
+        <!-- Password -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter password" required><br><br>
 
-  <!-- Section 4: HTML5 Form -->
-  <section>
-    <h2>Registration Form</h2>
-    <form action="#" method="post">
-      <fieldset>
-        <legend>Personal Information</legend>
+        <!-- Number -->
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="18" max="60" placeholder="18 - 60"><br><br>
 
-        <label for="fullname">Full Name:</label><br/>
-        <input type="text" id="fullname" name="fullname" placeholder="John Doe" required minlength="3" autocomplete="name"><br/><br/>
+        <!-- Date -->
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob"><br><br>
 
-        <label for="email">Email:</label><br/>
-        <input type="email" id="email" name="email" placeholder="you@example.com" required autocomplete="email"><br/><br/>
+        <!-- Radio buttons -->
+        <p>Gender:</p>
+        <input type="radio" id="male" name="gender" value="Male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label><br><br>
 
-        <label for="phone">Phone Number:</label><br/>
-        <input type="tel" id="phone" name="phone" placeholder="0712345678" pattern="[0-9]{10}" required><br/><br/>
+        <!-- Checkboxes -->
+        <p>Skills:</p>
+        <input type="checkbox" id="html" name="skills" value="HTML">
+        <label for="html">HTML</label>
+        <input type="checkbox" id="css" name="skills" value="CSS">
+        <label for="css">CSS</label>
+        <input type="checkbox" id="js" name="skills" value="JavaScript">
+        <label for="js">JavaScript</label><br><br>
 
-        <label for="dob">Date of Birth:</label><br/>
-        <input type="date" id="dob" name="dob" required><br/><br/>
-      </fieldset>
-
-      <fieldset>
-        <legend>Account Details</legend>
-
-        <label for="username">Username:</label><br/>
-        <input type="text" id="username" name="username" required minlength="5"><br/><br/>
-
-        <label for="password">Password:</label><br/>
-        <input type="password" id="password" name="password" required minlength="6"><br/><br/>
-
-        <label for="confirm">Confirm Password:</label><br/>
-        <input type="password" id="confirm" name="confirm" required minlength="6"><br/><br/>
-
-        <label for="country">Country:</label><br/>
+        <!-- Select -->
+        <label for="country">Country:</label>
         <select id="country" name="country" required>
-          <option value="">Select</option>
+          <option value="">--Select--</option>
           <option value="kenya">Kenya</option>
-          <option value="uganda">Uganda</option>
-          <option value="tanzania">Tanzania</option>
-        </select><br/><br/>
+          <option value="usa">USA</option>
+          <option value="uk">UK</option>
+        </select><br><br>
 
-        <label for="bio">Short Bio:</label><br/>
-        <textarea id="bio" name="bio" placeholder="Tell us about yourself..." rows="4" cols="40"></textarea><br/><br/>
+        <!-- Textarea -->
+        <label for="bio">Bio:</label><br>
+        <textarea id="bio" name="bio" rows="4" cols="40" placeholder="Write something about yourself..."></textarea><br><br>
 
-        <label>
-          <input type="checkbox" name="terms" required> I agree to the terms and conditions
-        </label><br/><br/>
-      </fieldset>
+        <!-- File upload -->
+        <label for="resume">Upload Resume:</label>
+        <input type="file" id="resume" name="resume"><br><br>
 
-      <input type="submit" value="Register">
-    </form>
-  </section>
+        <!-- Readonly field -->
+        <label for="code">Referral Code:</label>
+        <input type="text" id="code" value="ABC123" readonly><br><br>
+
+        <!-- Submit button -->
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
 
   <footer>
-    <p>&copy; 2025 My Enhanced HTML5 Page</p>
+    <p>&copy; 2025 Enhanced Form Demo</p>
   </footer>
-
 </body>
 </html>
